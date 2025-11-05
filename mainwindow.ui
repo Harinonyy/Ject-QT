@@ -1,0 +1,2681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1495</width>
+    <height>819</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(245, 246, 247);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <widget class="QWidget" name="icone_widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+	background-color: rgb(0, 71, 128);
+}
+QPushButton{
+color: white;
+height: 59px;
+border: none;
+border-radius: 10px;
+
+}
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 30);
+}
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 60);
+}
+QPushButton:Checked{
+background-color: #E0F7FA; 
+    color: #004780;
+font-weight: bold;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="lbl_icone_logo">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="icones.qrc">:/nav/icone/Eni.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>15</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btn_icone_dashboard">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="icones.qrc">
+             <normaloff>:/nav/icone/dashboard 2.png</normaloff>:/nav/icone/dashboard 2.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_icone_etudiants">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="icones.qrc">
+             <normaloff>:/nav/icone/etudiant 2.png</normaloff>:/nav/icone/etudiant 2.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_icone_groupes">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="icones.qrc">
+             <normaloff>:/nav/icone/groupe 2.png</normaloff>:/nav/icone/groupe 2.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_icone_enseignants">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="icones.qrc">
+             <normaloff>:/nav/icone/encadreur 2.png</normaloff>:/nav/icone/encadreur 2.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_icone_themes">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="icones.qrc">
+             <normaloff>:/nav/icone/theme 2.png</normaloff>:/nav/icone/theme 2.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_icone_evaluation">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="icones.qrc">
+             <normaloff>:/nav/icone/evaluation 2.png</normaloff>:/nav/icone/evaluation 2.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>142</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_icone_exit">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icones.qrc">
+           <normaloff>:/nav/icone/se-deconnecter.png</normaloff>:/nav/icone/se-deconnecter.png</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="icone_name_widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+	background-color: rgb(0, 71, 128);
+}
+QPushButton{
+color: white;
+text-align: left;
+height: 59px;
+border: none;
+padding-left: 10px;
+font-weight: bold;
+border-radius: 10px; 
+}
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 30);
+}
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 60);
+}
+QPushButton:Checked{
+background-color: #E0F7FA; 
+    color: #004780;
+font-weight: bold;
+border-top-left-radius: 10px; 
+border-bottom-left-radius: 5px; 
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="rightMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="rightMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="lbl_logo">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="icones.qrc">:/nav/icone/Eni.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl_logo_name">
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-weight: bold;
+border: none;</string>
+           </property>
+           <property name="text">
+            <string>ENI</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>15</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btn_dashboard">
+           <property name="text">
+            <string>Dashboard</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icones.qrc">
+             <normaloff>:/nav/icone/dashboard 2.png</normaloff>:/nav/icone/dashboard 2.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_etudiants">
+           <property name="text">
+            <string>Etudiants</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icones.qrc">
+             <normaloff>:/nav/icone/etudiant 2.png</normaloff>:/nav/icone/etudiant 2.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_groupes">
+           <property name="text">
+            <string>Groupes</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icones.qrc">
+             <normaloff>:/nav/icone/groupe 2.png</normaloff>:/nav/icone/groupe 2.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_enseignants">
+           <property name="text">
+            <string>Enseignants</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icones.qrc">
+             <normaloff>:/nav/icone/encadreur 2.png</normaloff>:/nav/icone/encadreur 2.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_themes">
+           <property name="text">
+            <string>Themes</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icones.qrc">
+             <normaloff>:/nav/icone/theme 2.png</normaloff>:/nav/icone/theme 2.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_evaluation">
+           <property name="text">
+            <string>Evaluation</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icones.qrc">
+             <normaloff>:/nav/icone/evaluation 2.png</normaloff>:/nav/icone/evaluation 2.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>140</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_exit">
+         <property name="text">
+          <string>Exit</string>
+         </property>
+         <property name="icon">
+          <iconset resource="icones.qrc">
+           <normaloff>:/nav/icone/se-deconnecter.png</normaloff>:/nav/icone/se-deconnecter.png</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="main_menu" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(245, 246, 247);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QWidget" name="header_widget" native="true">
+         <property name="styleSheet">
+          <string notr="true">background-color: #F0F8FF;
+border-bottom: 1px solid #D0D0D0;
+border-radius: 12px;</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="btn_menu">
+            <property name="styleSheet">
+             <string notr="true">border: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icones.qrc">
+              <normaloff>:/nav/icone/barre-de-menu.png</normaloff>:/nav/icone/barre-de-menu.png</iconset>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>292</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="styleSheet">
+               <string notr="true">color:grey;</string>
+              </property>
+              <property name="text">
+               <string>search something</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_search">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icones.qrc">
+                <normaloff>:/nav/icone/recherche.png</normaloff>:/nav/icone/recherche.png</iconset>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>292</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_profile">
+            <property name="styleSheet">
+             <string notr="true">border: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icones.qrc">
+              <normaloff>:/nav/icone/etudiant 1.png</normaloff>:/nav/icone/etudiant 1.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="containers_widget">
+         <property name="styleSheet">
+          <string notr="true">
+border-radius: 15px;
+</string>
+         </property>
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <widget class="QWidget" name="dashboard_page">
+          <widget class="QLabel" name="lbl_titre_dashboard">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>10</y>
+             <width>211</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">    color: #004780;
+font: bold 15pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Tableau de Bord</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="card_frame2" native="true">
+           <property name="geometry">
+            <rect>
+             <x>19</x>
+             <y>50</y>
+             <width>1221</width>
+             <height>148</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+background-color: #fefeff;
+border-raidus: 10px;
+}
+</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,0,0,0,0,0,0">
+            <property name="spacing">
+             <number>10</number>
+            </property>
+            <property name="leftMargin">
+             <number>150</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="card2_1">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>2</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color:rgb(230, 247, 255)</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item alignment="Qt::AlignmentFlag::AlignTop">
+                <widget class="QFrame" name="frame_etudiant_2_1">
+                 <property name="frameShape">
+                  <enum>QFrame::Shape::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Shadow::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_8">
+                  <item>
+                   <widget class="QLabel" name="label">
+                    <property name="styleSheet">
+                     <string notr="true">color: black;
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>Etudiants</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="lbl_total_etudiants">
+                    <property name="minimumSize">
+                     <size>
+                      <width>55</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>55</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap resource="icones.qrc">:/nav/icone/etudiant 1.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignTop">
+                <widget class="QLabel" name="label_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>160</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(147, 147, 147);
+font: bold 600 14pt &quot;Segoe UI&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>1400</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QFrame" name="card2_2">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color:rgb(221, 238, 221)</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <widget class="QFrame" name="frame_groupe_2_2">
+                 <property name="frameShape">
+                  <enum>QFrame::Shape::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Shadow::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_9">
+                  <item>
+                   <widget class="QLabel" name="label_4">
+                    <property name="styleSheet">
+                     <string notr="true">color: black;
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>Groupes</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_5">
+                    <property name="minimumSize">
+                     <size>
+                      <width>55</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>55</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap resource="icones.qrc">:/nav/icone/groupe 1.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignTop">
+                <widget class="QLabel" name="lbl_total_groupes">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(147, 147, 147);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>100</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QFrame" name="card2_3">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(237, 223, 247);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <item>
+                <widget class="QFrame" name="frame_enseignant_2_3">
+                 <property name="frameShape">
+                  <enum>QFrame::Shape::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Shadow::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <item>
+                   <widget class="QLabel" name="label_7">
+                    <property name="styleSheet">
+                     <string notr="true">color: black;
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>Enseignants</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_8">
+                    <property name="minimumSize">
+                     <size>
+                      <width>55</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>55</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap resource="icones.qrc">:/nav/icone/encadreur 1.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignTop">
+                <widget class="QLabel" name="lbl_total_enseignants">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(147, 147, 147);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>56</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QFrame" name="card2_4">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(248, 234, 224);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <widget class="QFrame" name="frame_theme_2_4">
+                 <property name="frameShape">
+                  <enum>QFrame::Shape::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Shadow::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_11">
+                  <item>
+                   <widget class="QLabel" name="label_10">
+                    <property name="styleSheet">
+                     <string notr="true">color: black;
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>Themes</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_11">
+                    <property name="minimumSize">
+                     <size>
+                      <width>55</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>55</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap resource="icones.qrc">:/nav/icone/theme 1.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignTop">
+                <widget class="QLabel" name="lbl_total_themes">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(147, 147, 147);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>60</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="card_frame1" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>580</y>
+             <width>1051</width>
+             <height>160</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>160</width>
+             <height>160</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+background-color: #fefeff;
+border-raidus: 10px;
+}
+</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <property name="spacing">
+             <number>40</number>
+            </property>
+            <property name="leftMargin">
+             <number>200</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>25</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="card1_1">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QFrame" name="frame_etudiant">
+                 <property name="minimumSize">
+                  <size>
+                   <width>160</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::Shape::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Shadow::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_14">
+                  <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                   <widget class="QLabel" name="label_13">
+                    <property name="minimumSize">
+                     <size>
+                      <width>55</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>55</width>
+                      <height>53</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap resource="icones.qrc">:/nav/icone/avatar-dutilisateur.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btn_add_etudiant">
+                    <property name="styleSheet">
+                     <string notr="true">color: black;
+font-weight: bold;
+border: none;
+backgound-color: white;</string>
+                    </property>
+                    <property name="text">
+                     <string>Ajouter un étudiant</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="card1_2">
+              <property name="minimumSize">
+               <size>
+                <width>160</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_11">
+               <item>
+                <widget class="QFrame" name="frame_groupe">
+                 <property name="frameShape">
+                  <enum>QFrame::Shape::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Shadow::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_15">
+                  <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                   <widget class="QLabel" name="label_15">
+                    <property name="minimumSize">
+                     <size>
+                      <width>40</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>40</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap resource="icones.qrc">:/nav/icone/ajouter-un-groupe (1).png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btn_add_groupe">
+                    <property name="styleSheet">
+                     <string notr="true">color: black;
+font-weight: bold;</string>
+                    </property>
+                    <property name="text">
+                     <string>Ajouter un groupe</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="card1_3">
+              <property name="minimumSize">
+               <size>
+                <width>160</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item>
+                <widget class="QFrame" name="frame_enseignant">
+                 <property name="frameShape">
+                  <enum>QFrame::Shape::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Shadow::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_16">
+                  <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                   <widget class="QLabel" name="label_17">
+                    <property name="minimumSize">
+                     <size>
+                      <width>55</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>55</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap resource="icones.qrc">:/nav/icone/avatar-dutilisateur.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btn_add_enseignant">
+                    <property name="styleSheet">
+                     <string notr="true">color: black;
+font-weight: bold;</string>
+                    </property>
+                    <property name="text">
+                     <string>Ajouter un enseignant</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="card1_4">
+              <property name="minimumSize">
+               <size>
+                <width>160</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_13">
+               <item>
+                <widget class="QFrame" name="frame_theme">
+                 <property name="frameShape">
+                  <enum>QFrame::Shape::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Shadow::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_17">
+                  <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                   <widget class="QLabel" name="label_19">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap resource="icones.qrc">:/nav/icone/signet.png</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btn_add_theme">
+                    <property name="styleSheet">
+                     <string notr="true">color: black;
+font-weight: bold;</string>
+                    </property>
+                    <property name="text">
+                     <string>Creer un theme</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="etudiants_page">
+          <widget class="QLabel" name="lbl_titre_etudiants">
+           <property name="geometry">
+            <rect>
+             <x>11</x>
+             <y>11</y>
+             <width>271</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">    color: #004780;
+font: bold 15pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Gestion des étudiants</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_etudiants" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>1201</width>
+             <height>661</height>
+            </rect>
+           </property>
+           <widget class="QFrame" name="frame_etudiants">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>1171</width>
+              <height>62</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    /* Marge interne pour le texte et l'icône de la loupe */
+    padding: 3px; 
+    /* Bordure légèrement arrondie */
+    border: 1px solid #C4C4C3;
+    border-radius: 4px; 
+}
+QComboBox {
+    /* Marge interne pour le texte */
+    padding: 3px; 
+    /* Bordure légèrement arrondie */
+    border: 1px solid #C4C4C3;
+    border-radius: 4px; 
+}
+QComboBox::drop-down {
+    /* Rendre la flèche de la liste déroulante plus discrète */
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; 
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <item>
+              <widget class="QLabel" name="liste_etudiants">
+               <property name="styleSheet">
+                <string notr="true">color:rgb(144, 144, 144);
+font: bold 13pt &quot;Segoe UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Liste des etudiants</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>175</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="recherche_etudiants">
+               <property name="placeholderText">
+                <string>Taper un nom ou matricule </string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>48</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QComboBox" name="filtre_groupe">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Groupe...</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="filtre_classe">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Classe...</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="filtre_mention">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Mention...</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_add_etudiants">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color:rgb(255, 255, 255);
+font: bold 10pt &quot;Segoe UI&quot;;
+height: 40px;
+background-color: rgb(0, 102, 0);
+border-radius: 10px;
+text-align: right;
+}</string>
+               </property>
+               <property name="text">
+                <string>Nouveau etudiant </string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QTableView" name="table_etudiants">
+            <property name="geometry">
+             <rect>
+              <x>15</x>
+              <y>91</y>
+              <width>1161</width>
+              <height>551</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTableView QHeaderView::section {
+    text-align: center; 
+    font-weight: bold;
+    color: #404040; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::NoFrame</enum>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+            </property>
+            <property name="showGrid">
+             <bool>false</bool>
+            </property>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="groupes_page">
+          <widget class="QLabel" name="lbl_titre_groupes">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>281</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">    color: #004780;
+font: bold 15pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Gestion des groupes</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_groupes" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>49</y>
+             <width>1221</width>
+             <height>671</height>
+            </rect>
+           </property>
+           <widget class="QFrame" name="frame_groupes">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>1201</width>
+              <height>62</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    /* Marge interne pour le texte et l'icône de la loupe */
+    padding: 3px; 
+    /* Bordure légèrement arrondie */
+    border: 1px solid #C4C4C3;
+    border-radius: 4px; 
+}
+QComboBox {
+    /* Marge interne pour le texte */
+    padding: 3px; 
+    /* Bordure légèrement arrondie */
+    border: 1px solid #C4C4C3;
+    border-radius: 4px; 
+}
+QComboBox::drop-down {
+    /* Rendre la flèche de la liste déroulante plus discrète */
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; 
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_14">
+             <item>
+              <widget class="QLabel" name="liste_groupes">
+               <property name="styleSheet">
+                <string notr="true">color:rgb(144, 144, 144);
+font: bold 13pt &quot;Segoe UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Liste des groupes</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>175</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="recherche_groupes">
+               <property name="placeholderText">
+                <string>Taper un numero</string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_10">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>48</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_15">
+               <item>
+                <widget class="QComboBox" name="filtre_encadreur">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_11">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Expanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_add_groupes">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color:rgb(255, 255, 255);
+font: bold 10pt &quot;Segoe UI&quot;;
+height: 40px;
+background-color: rgb(0, 102, 0);
+border-radius: 10px;
+text-align: right;
+}</string>
+               </property>
+               <property name="text">
+                <string>Nouveau groupe</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QTableView" name="table_groupes">
+            <property name="geometry">
+             <rect>
+              <x>15</x>
+              <y>91</y>
+              <width>1181</width>
+              <height>551</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTableView QHeaderView::section {
+    text-align: center; 
+    font-weight: bold;
+    color: #404040; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::NoFrame</enum>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+            </property>
+            <property name="showGrid">
+             <bool>false</bool>
+            </property>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="enseignants_page">
+          <widget class="QLabel" name="lbl_titre_enseignants">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>281</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">    color: #004780;
+font: bold 15pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string> Gestion des enseignants</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_enseignants" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>49</y>
+             <width>1191</width>
+             <height>651</height>
+            </rect>
+           </property>
+           <widget class="QFrame" name="frame_enseignants">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>1171</width>
+              <height>62</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    /* Marge interne pour le texte et l'icône de la loupe */
+    padding: 3px; 
+    /* Bordure légèrement arrondie */
+    border: 1px solid #C4C4C3;
+    border-radius: 4px; 
+}
+QComboBox {
+    /* Marge interne pour le texte */
+    padding: 3px; 
+    /* Bordure légèrement arrondie */
+    border: 1px solid #C4C4C3;
+    border-radius: 4px; 
+}
+QComboBox::drop-down {
+    /* Rendre la flèche de la liste déroulante plus discrète */
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; 
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="liste_enseignants">
+               <property name="styleSheet">
+                <string notr="true">color:rgb(144, 144, 144);
+font: bold 13pt &quot;Segoe UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Liste des enseignants</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_15">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Expanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>175</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="recherche_enseignants">
+               <property name="placeholderText">
+                <string>Taper un nom ou une matricule</string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_17">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Expanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_add_enseignants">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color:rgb(255, 255, 255);
+font: bold 10pt &quot;Segoe UI&quot;;
+height: 40px;
+background-color: rgb(0, 102, 0);
+border-radius: 10px;
+text-align: right;
+}</string>
+               </property>
+               <property name="text">
+                <string>Nouveau enseignant</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QTableView" name="table_enseignants">
+            <property name="geometry">
+             <rect>
+              <x>15</x>
+              <y>91</y>
+              <width>1161</width>
+              <height>551</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTableView QHeaderView::section {
+    text-align: center; 
+    font-weight: bold;
+    color: #404040; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::NoFrame</enum>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+            </property>
+            <property name="showGrid">
+             <bool>false</bool>
+            </property>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="themes_page">
+          <widget class="QLabel" name="lbl_titre_themes">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>11</y>
+             <width>281</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">    color: #004780;
+font: bold 15pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Gestion des themes</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_themes" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>1221</width>
+             <height>671</height>
+            </rect>
+           </property>
+           <widget class="QFrame" name="frame_themes">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>1201</width>
+              <height>62</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    /* Marge interne pour le texte et l'icône de la loupe */
+    padding: 3px; 
+    /* Bordure légèrement arrondie */
+    border: 1px solid #C4C4C3;
+    border-radius: 4px; 
+}
+QComboBox {
+    /* Marge interne pour le texte */
+    padding: 3px; 
+    /* Bordure légèrement arrondie */
+    border: 1px solid #C4C4C3;
+    border-radius: 4px; 
+}
+QComboBox::drop-down {
+    /* Rendre la flèche de la liste déroulante plus discrète */
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; 
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_18">
+             <item>
+              <widget class="QLabel" name="liste_themes">
+               <property name="styleSheet">
+                <string notr="true">color:rgb(144, 144, 144);
+font: bold 13pt &quot;Segoe UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Liste des themes</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_16">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>175</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="recherche_themes">
+               <property name="placeholderText">
+                <string>Taper un titre</string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_18">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>48</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_19">
+               <item>
+                <widget class="QComboBox" name="filtre_mention_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_19">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Expanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_add_themes">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color:rgb(255, 255, 255);
+font: bold 10pt &quot;Segoe UI&quot;;
+height: 40px;
+background-color: rgb(0, 102, 0);
+border-radius: 10px;
+text-align: right;
+}</string>
+               </property>
+               <property name="text">
+                <string>Creer un theme</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QTableView" name="table_themes">
+            <property name="geometry">
+             <rect>
+              <x>15</x>
+              <y>91</y>
+              <width>1181</width>
+              <height>551</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTableView QHeaderView::section {
+    text-align: center; 
+    font-weight: bold;
+    color: #404040; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::NoFrame</enum>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+            </property>
+            <property name="showGrid">
+             <bool>false</bool>
+            </property>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="evaluation_page">
+          <widget class="QLabel" name="lbl_titre_evaluation">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>11</y>
+             <width>401</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">    color: #004780;
+font: bold 15pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Rapport et Evaluation des Projets</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="widget_evaluation" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>260</y>
+             <width>1221</width>
+             <height>461</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <widget class="QTableView" name="table_evaluation">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>1181</width>
+              <height>421</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(235, 235, 235);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::NoFrame</enum>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+            </property>
+            <property name="showGrid">
+             <bool>false</bool>
+            </property>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="widget_evaluation_2" native="true">
+           <property name="geometry">
+            <rect>
+             <x>9</x>
+             <y>60</y>
+             <width>641</width>
+             <height>181</height>
+            </rect>
+           </property>
+           <widget class="QFrame" name="frame_evaluation">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>36</y>
+              <width>631</width>
+              <height>141</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    /* Marge interne pour le texte et l'icône de la loupe */
+    padding: 3px; 
+    /* Bordure légèrement arrondie */
+    border: 1px solid #C4C4C3;
+    border-radius: 4px; 
+}
+QComboBox {
+    /* Marge interne pour le texte */
+    padding: 3px; 
+    /* Bordure légèrement arrondie */
+    border: 1px solid #C4C4C3;
+    border-radius: 4px; 
+}
+QComboBox::drop-down {
+    /* Rendre la flèche de la liste déroulante plus discrète */
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; 
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+QFrame{
+    /* Fond blanc pour la carte */
+    background-color: white; 
+    
+    /* Les coins arrondis */
+    border-radius: 12px; 
+    
+    /* Bordure très fine et claire pour l'effet de profondeur */
+    border: 1px solid #E0E0E0; 
+    
+    /* Padding interne pour séparer les outils des bords du frame */
+    padding: 10px; 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Shadow::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_21">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_18">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_17">
+                 <item>
+                  <widget class="QComboBox" name="filtre_groupe_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="placeholderText">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_13">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Horizontal</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Policy::Maximum</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>348</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_16">
+                 <item>
+                  <widget class="QPushButton" name="btn_etudiantsansnote">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+color:rgb(255, 255, 255);
+font: bold 10pt &quot;Segoe UI&quot;;
+height: 35px;
+	background-color: rgb(231, 117, 18);
+border-radius: 7px;
+text-align: right;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Afficher les etudiants sans note</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_12">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Horizontal</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Policy::Maximum</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>88</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="recherche">
+                   <property name="placeholderText">
+                    <string>Taper un titre</string>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QLabel" name="liste_etudiants_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>201</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:rgb(144, 144, 144);
+font: bold 13pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Liste des etudiants</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_20"/>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icones.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btn_menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icone_widget</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>283</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>56</x>
+     <y>540</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icone_name_widget</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>272</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>596</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_icone_evaluation</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_evaluation</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>470</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>124</x>
+     <y>470</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_icone_themes</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_themes</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>400</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>127</x>
+     <y>408</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_icone_enseignants</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_enseignants</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>126</x>
+     <y>332</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_icone_groupes</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_groupes</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>32</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>145</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_icone_etudiants</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_etudiants</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>120</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_icone_dashboard</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_dashboard</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>38</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>137</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_dashboard</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_icone_dashboard</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>144</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>40</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_etudiants</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_icone_etudiants</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>38</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_groupes</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_icone_groupes</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>28</x>
+     <y>235</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_enseignants</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_icone_enseignants</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>366</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>54</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_themes</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_icone_themes</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>136</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>40</x>
+     <y>438</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_evaluation</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_icone_evaluation</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>133</x>
+     <y>490</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>44</x>
+     <y>494</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_icone_exit</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>796</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>32</x>
+     <y>692</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_exit</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>796</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>704</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

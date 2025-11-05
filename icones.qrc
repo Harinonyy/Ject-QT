@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/nav">
+        <file>icone/barre-de-menu.png</file>
+        <file>icone/dashboard 1.png</file>
+        <file>icone/dashboard 2.png</file>
+        <file>icone/encadreur 1.png</file>
+        <file>icone/encadreur 2.png</file>
+        <file>icone/etudiant 1.png</file>
+        <file>icone/etudiant 2.png</file>
+        <file>icone/evaluation 1.png</file>
+        <file>icone/evaluation 2.png</file>
+        <file>icone/groupe 1.png</file>
+        <file>icone/groupe 2.png</file>
+        <file>icone/recherche.png</file>
+        <file>icone/theme 1.png</file>
+        <file>icone/theme 2.png</file>
+        <file>icone/Eni.png</file>
+        <file>icone/se-deconnecter.png</file>
+        <file>icone/ajouter-un-groupe (1).png</file>
+        <file>icone/avatar-dutilisateur.png</file>
+        <file>icone/chapeau-etudiant.png</file>
+        <file>icone/signet.png</file>
+    </qresource>
+</RCC>
